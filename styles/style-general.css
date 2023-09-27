@@ -1,0 +1,261 @@
+@font-face {
+	font-family: "tonikfontitalic";
+	src: url(../fonts/PPEditorialNew-UltralightItalic.otf) format("opentype");
+}
+
+@font-face {
+	font-family: "tonikfont";
+	src: url(../fonts/63740b48d59816cf50faa213_Aeonik-Regular.woff2) format("woff2");
+}
+
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-htext:#000000;
+	--color-broodtext:#666666;
+	--color-whitetext:#ffffff;
+	--color-background:#f5f5f5;
+
+	--color-detailsborder:#dadada;
+
+	--color-footerbackground:#000000;
+
+	--color-navtext:#ffffff;
+}
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: var(--color-background);
+}
+
+h1, h2, h3 {
+	font-family: "tonikfont";
+	margin: 0;
+	color: var(--color-htext)
+}
+
+a {
+	font-family: "tonikfont";
+	margin: 0;
+	text-decoration: none;
+}
+
+p {
+	font-family: "tonikfont";
+	margin: 0;
+	font-size: 1rem;
+    line-height: 1.625;
+	color: var(--color-broodtext)
+}
+
+video {
+	height: 18em;
+	width: 100%;
+	object-fit: cover;
+  }
+
+summary {
+	font-family: "tonikfont";
+	font-size: 1rem;
+    line-height: 1.625;
+}
+
+figure {
+	margin: 0;
+}
+
+figcaption {
+	font-family: "tonikfont";
+	margin: 0;
+	font-size: 1rem;
+    line-height: 1.625;
+	color: var(--color-broodtext)
+}
+
+
+/****************
+header
+****************/
+
+header {
+	display: flex;
+	justify-content: space-between;
+	position: sticky;
+	top: 0;
+	padding: 1.5em;
+}
+
+header > a svg {
+	height: 1.2em;
+	width: auto;
+	color: var(--color-htext);
+}
+
+header > svg {
+	height: 1.2em;
+	width: auto;
+}
+
+header nav {
+	background-color: black;
+	position: fixed;
+	inset: 0;
+	translate: 100% 0;
+	transition: .3s;
+}
+
+header nav.open {
+  translate: 0 0;
+}
+
+header nav ul {
+	list-style: none;
+	text-align: right;
+	position: fixed;
+	right: 1.5em;
+	bottom: 6.5em;
+}
+
+header nav a {
+	text-decoration:none;
+	color: var(--color-navtext);
+    font-size: 1.18em;
+    line-height: 2.6;
+	font-weight: 200;
+}
+
+header button {
+	background: url("../images/menu.svg");
+	background-repeat: no-repeat;
+	padding: .9em;
+	z-index: 100;
+	border: none;
+}
+
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+  }
+
+  body.scroll-lock {
+	overflow: hidden;
+  }
+
+/****************
+footer
+****************/
+
+footer {
+    background-color: var(--color-footerbackground);
+}
+
+footer section:nth-of-type(1) {
+    padding: 8em 0 .5em 0;
+}
+
+footer section:nth-of-type(1) > ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0 2em;
+}
+
+footer section:nth-of-type(1) > ul li a img {
+    width: 1.15em;
+    height: auto;
+}
+
+/* section 2------------------ */
+
+footer section:nth-of-type(2) {
+    position: relative;
+}
+
+footer section:nth-of-type(2) > ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+}
+
+footer section:nth-of-type(2) > ul::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar track */
+  }
+
+footer section:nth-of-type(2) > ul li {
+    min-width: 100%;
+    scroll-snap-align: center;
+
+}
+
+footer section:nth-of-type(2) > ul li img {
+    width: 100%;
+    height: auto;
+    margin-right: 20px;
+}
+
+footer section:nth-of-type(2) div {
+    width: 20px;
+    flex-shrink: 0;
+}
+
+footer section:nth-of-type(2) > ul a {
+    position: absolute;
+	bottom: 1em;
+	left: 1.5em;
+    right: 1.5em;
+	background-color: white;
+    padding: 1.3em;
+    border-radius: 3em;
+	color: var(--color-htext);
+}
+
+/* footer nav------------------*/
+
+footer > div:nth-of-type(1) {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: var(--color-footerbackground);
+	padding: .5em 0 6em 0;
+}
+
+footer div:nth-of-type(1) nav ul {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+footer div:nth-of-type(1) p {
+	padding: 0 0 0 1.5em;
+	margin: 0;
+	font-size: .8em;
+}
+
+footer div:nth-of-type(1) a {
+	padding: 0 1.5em 0 0;
+	margin: 0;
+	font-size: .8em;
+	color: var(--color-broodtext)
+}

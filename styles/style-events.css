@@ -1,0 +1,127 @@
+@font-face {
+	font-family: "tonikfontitalic";
+	src: url(../fonts/PPEditorialNew-UltralightItalic.otf) format("opentype");
+}
+
+@font-face {
+	font-family: "tonikfont";
+	src: url(../fonts/63740b48d59816cf50faa213_Aeonik-Regular.woff2) format("woff2");
+}
+
+
+/****************
+section 1
+****************/
+
+
+section:nth-of-type(1) {
+    padding: 3.3em 0 0 1.5em;
+}
+
+section:nth-of-type(1) h1 {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    max-width: 80%;
+    font-weight: 200;
+}
+
+section:nth-of-type(1) h1 em {
+    font-family: "tonikfontitalic";
+    font-style: italic;
+    font-weight: 200;
+}
+
+section:nth-of-type(1) h2 {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    max-width: 90%;
+    font-weight: 400;
+    color: var(	--color-broodtext);
+    padding-top: .3em;
+}
+
+section:nth-of-type(1) p {
+    max-width: 95%;
+    font-weight: 400;
+    padding-top: 2em;
+    font-size: .93rem;
+}
+
+
+/****************
+section 2 3 4 5 & 6
+****************/
+
+section:nth-of-type(2), section:nth-of-type(3), section:nth-of-type(4), section:nth-of-type(5) {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5em;
+}
+
+section:nth-of-type(6) {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5em 5em 1.5em;
+}
+
+section:nth-of-type(2) h3, section:nth-of-type(3) h3, section:nth-of-type(4) h3, section:nth-of-type(5) h3, section:nth-of-type(6) h3 {
+    font-size: .93rem;
+    line-height: 1.625;
+    font-weight: 400;
+}
+
+section:nth-of-type(2) p, section:nth-of-type(3) p, section:nth-of-type(4) p, section:nth-of-type(5) p, section:nth-of-type(6) p {
+    font-size: .93rem;
+    line-height: 1.625;
+    font-weight: 400;
+}
+
+section:nth-of-type(2) img {
+    order: -1;
+    height: 1.6em;
+    width: fit-content;
+    margin: 2em 0;
+}
+
+section:nth-of-type(3) img, section:nth-of-type(4) img, section:nth-of-type(5) img, section:nth-of-type(6) img {
+    order: -1;
+    height: 1.6em;
+    width: fit-content;
+    margin: 5em 0 2em 0;
+}
+
+section:nth-of-type(2) p:first-of-type, section:nth-of-type(3) p:first-of-type, section:nth-of-type(4) p:first-of-type, section:nth-of-type(5) p:first-of-type, section:nth-of-type(6) p:first-of-type {
+    padding: .5em 0;
+}
+
+
+/****************
+section 7
+****************/
+
+section:nth-of-type(7) {
+    padding: 3em 1.5em;
+    background-color: var(	--color-footerbackground);
+}
+
+section:nth-of-type(7) > h2 {
+    color: var(--color-whitetext);
+    font-size: 1.5rem;
+    line-height: 1.33;
+}
+
+section:nth-of-type(7) > h2 em {
+font-family: "tonikfontitalic";
+font-style: italic;
+font-weight: 200;
+}
+
+section:nth-of-type(7) > h3 {
+    color: var(--color-broodtext);
+    font-size: 1.5rem;
+    line-height: 1.33;
+}
+
+section:nth-of-type(7) > p {
+    color: var(--color-broodtext)
+}
