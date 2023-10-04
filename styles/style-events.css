@@ -1,11 +1,11 @@
 @font-face {
-	font-family: "tonikfontitalic";
-	src: url(../fonts/PPEditorialNew-UltralightItalic.otf) format("opentype");
+    font-family: "tonikfontitalic";
+    src: url(../fonts/PPEditorialNew-UltralightItalic.otf) format("opentype");
 }
 
 @font-face {
-	font-family: "tonikfont";
-	src: url(../fonts/63740b48d59816cf50faa213_Aeonik-Regular.woff2) format("woff2");
+    font-family: "tonikfont";
+    src: url(../fonts/63740b48d59816cf50faa213_Aeonik-Regular.woff2) format("woff2");
 }
 
 
@@ -14,33 +14,33 @@ section 1
 ****************/
 
 
-section:nth-of-type(1) {
+div>div:nth-of-type(1)>section {
     padding: 3.3em 0 0 1.5em;
 }
 
-section:nth-of-type(1) h1 {
+div>div:nth-of-type(1)>section h1 {
     font-size: 1.5rem;
     line-height: 1.33;
     max-width: 80%;
     font-weight: 200;
 }
 
-section:nth-of-type(1) h1 em {
+div>div:nth-of-type(1)>section h1 em {
     font-family: "tonikfontitalic";
     font-style: italic;
-    font-weight: 200;
+    font-weight: 400;
 }
 
-section:nth-of-type(1) h2 {
+div>div:nth-of-type(1)>section h2 {
     font-size: 1.5rem;
     line-height: 1.33;
     max-width: 90%;
     font-weight: 400;
-    color: var(	--color-broodtext);
+    color: var(--color-broodtext);
     padding-top: .3em;
 }
 
-section:nth-of-type(1) p {
+div>div:nth-of-type(1)>section p {
     max-width: 95%;
     font-weight: 400;
     padding-top: 2em;
@@ -52,46 +52,41 @@ section:nth-of-type(1) p {
 section 2 3 4 5 & 6
 ****************/
 
-section:nth-of-type(2), section:nth-of-type(3), section:nth-of-type(4), section:nth-of-type(5) {
+div>div:nth-of-type(2) section {
     display: flex;
     flex-direction: column;
     padding: 0 1.5em;
 }
 
-section:nth-of-type(6) {
-    display: flex;
-    flex-direction: column;
+div>div:nth-of-type(2)>section:nth-of-type(5) {
     padding: 0 1.5em 5em 1.5em;
 }
 
-section:nth-of-type(2) h3, section:nth-of-type(3) h3, section:nth-of-type(4) h3, section:nth-of-type(5) h3, section:nth-of-type(6) h3 {
+div>div:nth-of-type(2) section h3 {
     font-size: .93rem;
     line-height: 1.625;
     font-weight: 400;
 }
 
-section:nth-of-type(2) p, section:nth-of-type(3) p, section:nth-of-type(4) p, section:nth-of-type(5) p, section:nth-of-type(6) p {
+div>div:nth-of-type(2) section p {
     font-size: .93rem;
     line-height: 1.625;
     font-weight: 400;
 }
 
-section:nth-of-type(2) img {
-    order: -1;
-    height: 1.6em;
-    width: fit-content;
-    margin: 2em 0;
+div>div:nth-of-type(2)>section p:first-of-type {
+    padding: .5em 0;
 }
 
-section:nth-of-type(3) img, section:nth-of-type(4) img, section:nth-of-type(5) img, section:nth-of-type(6) img {
+div>div:nth-of-type(2) section img {
     order: -1;
     height: 1.6em;
     width: fit-content;
     margin: 5em 0 2em 0;
 }
 
-section:nth-of-type(2) p:first-of-type, section:nth-of-type(3) p:first-of-type, section:nth-of-type(4) p:first-of-type, section:nth-of-type(5) p:first-of-type, section:nth-of-type(6) p:first-of-type {
-    padding: .5em 0;
+div>div:nth-of-type(2)>section:nth-of-type(1) img {
+    margin: 2em 0;
 }
 
 
@@ -99,29 +94,290 @@ section:nth-of-type(2) p:first-of-type, section:nth-of-type(3) p:first-of-type, 
 section 7
 ****************/
 
-section:nth-of-type(7) {
+main>section:nth-of-type(1) {
     padding: 3em 1.5em;
-    background-color: var(	--color-footerbackground);
+    background-color: var(--color-footerbackground);
 }
 
-section:nth-of-type(7) > h2 {
+main>section:nth-of-type(1)>h2 {
     color: var(--color-whitetext);
-    font-size: 1.5rem;
+    font-size: 1.38rem;
     line-height: 1.33;
+    font-weight: 200;
 }
 
-section:nth-of-type(7) > h2 em {
-font-family: "tonikfontitalic";
-font-style: italic;
-font-weight: 200;
+main>section:nth-of-type(1)>h2 em {
+    font-family: "tonikfontitalic";
+    font-style: italic;
+    font-weight: 200;
 }
 
-section:nth-of-type(7) > h3 {
+main>section:nth-of-type(1)>h3 {
     color: var(--color-broodtext);
-    font-size: 1.5rem;
+    font-size: 1.38rem;
     line-height: 1.33;
+    font-weight: 200;
 }
 
-section:nth-of-type(7) > p {
+main>section:nth-of-type(1)>p {
+    color: var(--color-broodtext);
+    font-size: .9em;
+    line-height: 1.33;
+    font-weight: 200;
+}
+
+main>section:nth-of-type(1)>form {
+    position: relative;
+    display: flex;
+    padding: 1.7em 0 2em 0;
+    align-items: center;
+}
+
+main>section:nth-of-type(1)>form button {
+    position: absolute;
+    width: auto;
+    height: auto;
+    right: 1em;
+}
+
+main>section:nth-of-type(1)>form button {
+    font-family: 'tonikfont';
+    font-size: 1.1em;
+    border: solid transparent;
+    padding: .9em 1.7em;
+    border-radius: 2.5em;
+    background-color: var(--color-buttonbackground);
+}
+
+main>section:nth-of-type(1)>form button:hover {
+    border: solid;
+    border-color: var(--color-hover);
+    background-color: var(--color-background);
+    color: var(--color-hover);
+}
+
+main>section:nth-of-type(1)>form input {
+    width: 100%;
+    height: auto;
+    padding: 2em 1em;
+    border: none;
+    outline: none;
+    font-family: "tonikfont";
+    font-size: .9em;
     color: var(--color-broodtext)
+}
+
+
+/****************
+section 8 9 10 11 & 12
+****************/
+
+main>section:nth-of-type(2),
+main>section:nth-of-type(3) {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+main>section:nth-of-type(2)>ul,
+main>section:nth-of-type(3)>ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1em;
+}
+
+main>section:nth-of-type(2)>ul li,
+main>section:nth-of-type(3)>ul li {
+    min-width: 100%;
+    width: 100%;
+    scroll-snap-align: center;
+    overflow-y: hidden;
+}
+
+main>section:nth-of-type(2) img,
+main>section:nth-of-type(3) img {
+    width: 100%;
+    height: 50em;
+    object-fit: cover;
+}
+
+main>section:nth-of-type(2)>ul::-webkit-scrollbar,
+main>section:nth-of-type(3)>ul::-webkit-scrollbar {
+    width: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/****************
+fixed button
+****************/
+
+main>div:nth-of-type(2) {
+    display: none;
+}
+
+main>div:nth-of-type(2) a {
+    display: none;
+}
+
+
+/*************************************************************
+==========================desktop=============================
+*************************************************************/
+
+@media (min-width: 770px) {
+
+
+    /****************
+    section 2 3 4 5 & 6
+    events
+    ****************/
+
+    main>div {
+        display: flex;
+        gap: 3em;
+    }
+
+    div>div:nth-of-type(1) section {
+        position: sticky;
+        top: 0;
+        padding: 8em 0 8em 3em;
+    }
+
+    div>div:nth-of-type(2) section {
+        padding: 0 3em 4em 0;
+    }
+
+    div>div:nth-of-type(2) section:first-of-type {
+        padding: 13em 3em 4em 0;
+    }
+
+    div>div:nth-of-type(2) section:last-of-type {
+        padding: 0 3em 8em 0;
+    }
+
+    div>div:nth-of-type(2) section img {
+        margin: 1.5em 0;
+    }
+
+    div>div:nth-of-type(1)>section h1 {
+        font-size: 3em;
+        max-width: 100%;
+    }
+
+    div>div:nth-of-type(1)>section h2 {
+        font-size: 3em;
+        padding-top: .2em;
+        font-weight: 400;
+        max-width: 100%;
+    }
+
+
+    /****************
+    section 7
+    form section
+    ****************/
+
+    main>section:nth-of-type(1) {
+        padding: 4em 3em 4em 3em;
+    }
+
+    main>section:nth-of-type(1) h2 {
+        font-size: 2.5em;
+    }
+
+    main>section:nth-of-type(1) h3 {
+        font-size: 2.5em;
+    }
+
+    main>section:nth-of-type(1)>form {
+        padding: 4em 0;
+    }
+
+    main>section:nth-of-type(1)>form input {
+        padding: 2.5em;
+        font-size: 1.1em;
+    }
+
+    main>section:nth-of-type(1)>form button {
+        font-family: 'tonikfont';
+        font-size: 1.1em;
+        border: solid transparent;
+        padding: 1.5em 2.5em;
+        border-radius: 2.5em;
+        background-color: var(--color-buttonbackground);
+    }
+
+    main>section:nth-of-type(1)>form button:hover {
+        border: solid;
+        border-color: var(--color-hover);
+        background-color: var(--color-background);
+        color: var(--color-hover);
+    }
+
+    main>section:nth-of-type(1)>p {
+        font-size: 1.1em;
+    }
+
+
+    /****************
+    images
+    ****************/
+
+    main>section:nth-of-type(2) ul li {
+        min-width: 35%;
+        width: 35%;
+        height: 30em;
+        scroll-snap-align: center;
+        overflow-y: hidden;
+    }
+
+    main>section:nth-of-type(3) ul li {
+        min-width: 45%;
+        width: 45%;
+        height: 30em;
+        overflow-y: hidden;
+    }
+
+    main>section:nth-of-type(2) ul li img,
+    main>section:nth-of-type(3) ul li img,
+    main>section:nth-of-type(4) ul li img,
+    main>section:nth-of-type(5) ul li img,
+    main>section:nth-of-type(6) ul li img {
+        width: 100%;
+        height: 30em;
+        object-fit: cover;
+    }
+
+
+    /****************
+    fixed button
+    ****************/
+
+    main>div:nth-of-type(2) {
+        display: block;
+        position: fixed;
+        top: 1.6em;
+        right: 2.5em;
+        left: auto;
+        bottom: auto;
+        width: auto;
+        transform: translate(0, 0);
+        background-color: transparent;
+    }
+
+    main>div:nth-of-type(2) a {
+        display: block;
+        font-size: .8em;
+        color: var(--color-htext);
+        background-color: var(--color-buttonbackground);
+        padding: 1em 2em;
+        border-radius: 2em;
+        margin: 0;
+    }
+
 }

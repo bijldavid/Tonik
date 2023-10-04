@@ -168,8 +168,9 @@ Ook had ik een vraagje over of mijn oplossing voor een niet scrollbare pagina ee
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
-
+Een grote verbeteringen in termen van html-structuur vergeleken met het origineel. Helaas was ik er nog niet aan toegekomen om aan de toegankelijkheid te werken. Afbeeldingen hadden nog steeds geen alt-tags. En ik had nog geen aria labels geïmplementeerd etc. 
+De screenreader navigeerde de website zoals bedoeld -----check sr nav------.
+Ik volgde de juiste h-structuur. Ik zorgde ervoor dat lettertypen en dergelijke op andere apparaten werkten. De website begon al erg te lijken op het origineel.
 </details>
 
 
@@ -182,8 +183,7 @@ Ook had ik een vraagje over of mijn oplossing voor een niet scrollbare pagina ee
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+Ik begin de druk van de deadline wel al een beetje te voelen. Zoals het er nu voor staat, heb ik de html en css voor beide pagina's voor mobile view zo goed als af. Er zijn nog kleine wijzigingen die ik kan maken, maar die zie ik meer als accessoire dan als belangrijk. Voor nu wil ik werken aan het responsive maken van de website. Ik verwacht dit te doen met css grids, wat een uitdaging is omdat ik nog niet in deze mate met css grid heb gewerkt. Veel van de vragen die ik heb voor deze sessie gaan over kleinere details om de pagina mooi te maken / ervoor te zorgen dat ik me aan de semantische regels houd. 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -193,6 +193,23 @@ Ook had ik een vraagje over of mijn oplossing voor een niet scrollbare pagina ee
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
+
+Mijn vragen:
+Vraag 1: hoe en of ik ::after moet gebruiken
+Vraag 2: mijn font dikte is net een beetje anders, font weight werkt niet 
+
+Vivanne Hoogendam
+Vraag 1 : hoe voeg ik een scrollbar toe aan een horizontale carousel?
+Vraag 2 (als genoeg tijd over): hoe zorg ik voor bepaalde animatie bij meer weten section.
+
+Sybren Loos
+Vraag 1: Hoe laat ik met een knop specifieke dingen naar voren komen
+Vraag 2: Wat zijn de beste dingen om toe te passen als je frontend kiest
+
+Jaden Straal
+Vraag 1: hoe laat ik mijn nav animeren?
+Vraag 2: hoe zorg ik ervoor dat de em losstaat van mn span
+
 
 
   ### Verslag van meeting
