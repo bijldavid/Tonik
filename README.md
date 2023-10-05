@@ -231,16 +231,16 @@ Tijdens deze meeting leerde ik hoe ik een animatie die specifiek in mijn website
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="indexpagina.png" width="375px" alt="indexpagina">
-  <img src="indexpaginamobile.png" width="375px" alt="indexpaginamobile">
-  <img src="eventspagina.png" width="375px" alt="eventspagina">
-  <img src="eventspaginamobile.png" width="375px" alt="eventspaginamobile">
+  <img src="readme-images/indexpagina.png" width="375px" alt="indexpagina">
+  <img src="readme-images/indexpaginamobile.png" width="375px" alt="indexpaginamobile">
+  <img src="readme-images/eventspagina.png" width="375px" alt="eventspagina">
+  <img src="readme-images/eventspaginamobile.png" width="375px" alt="eventspaginamobile">
 
 
   ### Dit ging goed/Heb ik geleerd: 
 Dingen die goed gingen en waar ik redelijk trots op ben zijn: de responsiveness, hoewel ik een paar divs heb gebruikt om het mogelijk te maken, ben ik nog steeds erg trots dat ik het heb gekregen zoals ik het wilde.
 
-  <img src="grid.png" width="375px" alt="grid">
+  <img src="readme-images/grid.png" width="375px" alt="grid">
 
 Het tweede waar ik trots op ben is de algehele uitstraling van de pagina. Ik vind het lijken op de officiële tonik website.
 
@@ -252,7 +252,7 @@ Ik denk dat ik veel heb verwerkt van wat we in de werkgroepen hebben geleerd: po
   ### Dit was lastig/Is niet gelukt:
 Er zijn enkele dingen waar ik niet aan toe ben gekomen of waarvan ik niet wist hoe ik ze moest namaken. Te beginnen met het parallaxeffect op het onderste gedeelte (desktopview). Ik heb er wat mee gerommeld maar kreeg het niet werkende. Weliswaar heb ik er niet al te veel tijd aan besteed om het uit te zoeken, maar dat heeft meer te maken met het feit dat ik eerst de rest af moest maken.
 
-  <img src="parallax.png" width="375px" alt="parallax">
+  <img src="readme-images/parallax.png" width="375px" alt="parallax">
 
 Ten tweede zijn de video's op mijn pagina niet te pauzeren en ook niet echt interactief. Het origineel heeft een :hover effect dat ik niet heb kunnen toevoegen. Dat geldt trouwens voor heel veel animaties in de originele pagina, er zijn veel kleine interacties/animaties waar ik niet aan toe ben gekomen.
 
