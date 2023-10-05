@@ -113,14 +113,14 @@ main>section:nth-of-type(1)>h2 em {
 }
 
 main>section:nth-of-type(1)>h3 {
-    color: var(--color-broodtext);
+    color: var(--color-footertext);
     font-size: 1.38rem;
     line-height: 1.33;
     font-weight: 200;
 }
 
 main>section:nth-of-type(1)>p {
-    color: var(--color-broodtext);
+    color: var(--color-footertext);
     font-size: .9em;
     line-height: 1.33;
     font-weight: 200;
@@ -142,7 +142,7 @@ main>section:nth-of-type(1)>form button {
 
 main>section:nth-of-type(1)>form button {
     font-family: 'tonikfont';
-    font-size: 1.1em;
+    font-size: .9em;
     border: solid transparent;
     padding: .9em 1.7em;
     border-radius: 2.5em;
@@ -167,12 +167,23 @@ main>section:nth-of-type(1)>form input {
     color: var(--color-broodtext)
 }
 
+main>section:nth-of-type(1)>p a {
+    color: var(--color-footertext);
+}
+
+main>section:nth-of-type(1)>p a:hover {
+    color: var(--color-hover);
+}
+
 
 /****************
 section 8 9 10 11 & 12
 ****************/
 
-main>section:nth-of-type(2),
+main>section:nth-of-type(2) {
+    position: relative;
+    padding-top: 1.3em; 
+}
 main>section:nth-of-type(3) {
     position: relative;
     padding: 0;
@@ -361,8 +372,8 @@ main>div:nth-of-type(2) a {
     main>div:nth-of-type(2) {
         display: block;
         position: fixed;
-        top: 1.6em;
-        right: 2.5em;
+        top: 1.5em;
+        right: 1.7em;
         left: auto;
         bottom: auto;
         width: auto;

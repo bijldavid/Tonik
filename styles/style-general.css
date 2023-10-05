@@ -29,6 +29,7 @@
 	--color-detailsborder:#dadada;
 
 	--color-footerbackground:#000000;
+	--color-footertext: #7c7c7c;
 	--color-navbackground: #000000;
 	--color-buttonbackground: #ffffff;
 
@@ -105,6 +106,10 @@ figcaption {
 	position: absolute;
 	white-space: nowrap;
 	width: 1px;
+  }
+
+  .visually-gone {
+	display: none;
   }
 
   body.scroll-lock {
@@ -192,13 +197,14 @@ footer div:nth-of-type(1) p {
 	padding: 0 0 0 1.5em;
 	margin: 0;
 	font-size: .8em;
+	color: var(--color-footertext);
 }
 
 footer div:nth-of-type(1) a {
 	padding: 0 1.5em 0 0;
 	margin: 0;
 	font-size: .8em;
-	color: var(--color-broodtext)
+	color: var(--color-footertext);
 }
 
 
@@ -232,8 +238,8 @@ footer div:nth-of-type(1) a {
 		position: static;
 		display: flex;
 		padding: 0;
-		margin: 0 0 0 5em;
-		gap: 2em;
+		margin: 0 0 0 3em;
+		gap: .3em
 	}
 	
 	header nav a {
@@ -242,5 +248,16 @@ footer div:nth-of-type(1) a {
 		font-size: .8em;
 		line-height: 2.6;
 		font-weight: 200;
+		border: solid transparent;
+		padding: 1em 1.7em;
+		border-radius: 2.5em;
+		background-color: transparent;
+	}
+	
+	header nav a:hover {
+		border: solid;
+		border-color: var(--color-hover);
+		background-color: var(--color-background);
+		color: var(--color-hover);
 	}
 }

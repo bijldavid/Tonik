@@ -20,10 +20,10 @@ function updateElementClasses() {
   elements.forEach(element => {
     if (viewportWidth <= 770) {
       // Add the class if viewport width is 770px or less
-      element.classList.add('visually-hidden');
+      element.classList.add('visually-gone');
     } else {
       // Remove the class if viewport width is greater than 770px
-      element.classList.remove('visually-hidden');
+      element.classList.remove('visually-gone');
     }
   });
 }

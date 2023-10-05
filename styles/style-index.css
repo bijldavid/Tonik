@@ -126,22 +126,26 @@ div:nth-of-type(1) section:nth-of-type(5) video {
 
 
 /****************
-section 6
+section 7
+logo silder
 ****************/
+
+main>section:nth-of-type(2) {
+    width: 100%;
+    overflow: hidden;
+    padding: 3em 0 4em 0;
+}
 
 main>section:nth-of-type(2) ul {
     display: flex;
     justify-content: space-evenly;
     gap: 2em;
+    margin: 0;
+    padding: 0;
 }
 
 main>section:nth-of-type(2) li {
     list-style-type: none;
-}
-
-main>section:nth-of-type(2) {
-    width: 100%;
-    overflow: hidden;
 }
 
 main>section:nth-of-type(2) ul li img {
@@ -163,7 +167,7 @@ main>section:nth-of-type(2) ul li img {
 
 
 /****************
-section 7
+section 8
 carousel / testimonials
 ****************/
 
@@ -227,7 +231,7 @@ div:nth-of-type(2) div:nth-of-type(1) section:nth-of-type(1)>nav ul li a {
 
 
 /****************
-section 8 9 10 & 11
+section 9 10 11 & 12
 summary and details
 ****************/
 
@@ -360,6 +364,16 @@ div:nth-of-type(3) a {
 }
 
 
+
+
+
+
+
+
+
+
+
+
 /*************************************************************
 ==========================desktop=============================
 *************************************************************/
@@ -380,11 +394,10 @@ div:nth-of-type(3) a {
     }
 
 
-/****************
-section 2 t/m 6
-stuk met alle videos en tekst
-****************/
-
+    /****************
+    section 2 t/m 6
+    stuk met alle videos en tekst
+    ****************/
 
     main>div:nth-of-type(1) {
         display: grid;
@@ -426,20 +439,50 @@ stuk met alle videos en tekst
         object-fit: cover;
     }
 
-    div:nth-of-type(1) > section:nth-of-type(1)>a h2,
-    div:nth-of-type(1) > section:nth-of-type(2)>a h2,
-    div:nth-of-type(1) > section:nth-of-type(3)>a h2,
-    div:nth-of-type(1) > section:nth-of-type(4)>a h2,
-    div:nth-of-type(1) > section:nth-of-type(5)>a h2 {
+    div:nth-of-type(1)>section:nth-of-type(1)>a h2,
+    div:nth-of-type(1)>section:nth-of-type(2)>a h2,
+    div:nth-of-type(1)>section:nth-of-type(3)>a h2,
+    div:nth-of-type(1)>section:nth-of-type(4)>a h2,
+    div:nth-of-type(1)>section:nth-of-type(5)>a h2 {
         padding: 3em 0 0 0;
     }
 
-    div:nth-of-type(1) > section:nth-of-type(1)>a p,
-    div:nth-of-type(1) > section:nth-of-type(2)>a p,
-    div:nth-of-type(1) > section:nth-of-type(3)>a p,
-    div:nth-of-type(1) > section:nth-of-type(4)>a p,
-    div:nth-of-type(1) > section:nth-of-type(5)>a p {
+    div:nth-of-type(1)>section:nth-of-type(1)>a p,
+    div:nth-of-type(1)>section:nth-of-type(2)>a p,
+    div:nth-of-type(1)>section:nth-of-type(3)>a p,
+    div:nth-of-type(1)>section:nth-of-type(4)>a p,
+    div:nth-of-type(1)>section:nth-of-type(5)>a p {
         padding: 1em 0 0 0;
+    }
+
+
+    /****************
+    logo slider
+    ****************/
+
+    main>section:nth-of-type(2) {
+        padding: 5em 0 6em 0;
+    }
+
+    main>section:nth-of-type(2) ul {
+        gap: 2em;
+    }
+    
+    main>section:nth-of-type(2) ul li img {
+        display: inline-block;
+        animation: scroll 20s linear infinite;
+        width: auto;
+        height: 1.8em;
+    }
+    
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+    
+        100% {
+            transform: translateX(-100em);
+        }
     }
 
 
@@ -452,17 +495,18 @@ stuk met alle videos en tekst
 
     main>div:nth-of-type(2) {
         display: flex;
+        gap: 5em;
     }
 
     main>div:nth-of-type(2) div:nth-of-type(1) {
         order: 2;
-        width: 60%;
+        width: auto;
         margin: 0 3em 0 0;
     }
 
     main>div:nth-of-type(2) div:nth-of-type(2) {
         order: 1;
-        width: 40%;
+        width: 60em;
         margin: 0 0 0 3em;
     }
 
@@ -471,7 +515,7 @@ stuk met alle videos en tekst
     div:nth-of-type(2) div:nth-of-type(1) section:nth-of-type(1)>ul {
         display: flex;
         flex-direction: column;
-        padding: 6em 0 0 0;
+        padding: 13.8em 0 0 0;
     }
 
     div:nth-of-type(2) div:nth-of-type(1) section:nth-of-type(1)>ul li {
@@ -512,14 +556,14 @@ stuk met alle videos en tekst
 
     div:nth-of-type(2) div:nth-of-type(2) section:nth-of-type(1) h2 {
         background-color: transparent;
-        font-size: 2em;
+        font-size: 2.2em;
         font-family: "tonikfont";
         font-weight: 400;
     }
 
     div:nth-of-type(2) div:nth-of-type(2) section:nth-of-type(1) h3 {
         background-color: transparent;
-        font-size: 2em;
+        font-size: 2.2em;
         font-family: "tonikfontitalic";
         font-weight: 400;
     }
@@ -551,7 +595,7 @@ stuk met alle videos en tekst
         line-height: 1.625;
         max-width: 90%;
         font-weight: 400;
-        color: var(--color-htext);
+        color: var(--color-broodtext);
         position: relative;
         display: flex;
         align-items: center;
@@ -645,8 +689,8 @@ stuk met alle videos en tekst
 
     div:nth-of-type(3) {
         position: fixed;
-        top: 1.6em;
-        right: 2.5em;
+        top: 1.5em;
+        right: 1.7em;
         left: auto;
         bottom: auto;
         width: auto;
@@ -662,5 +706,4 @@ stuk met alle videos en tekst
         border-radius: 2em;
         margin: 0;
     }
-
 }

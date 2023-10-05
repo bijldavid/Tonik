@@ -140,21 +140,23 @@ Ook had ik een vraagje over of mijn oplossing voor een niet scrollbare pagina ee
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  |De eerste vraag die ik heb heeft te maken met de sectie met de logo's die eindeloos voorbij scrollen. Ik heb problemen met de scroller die zichzelf reset na een korte tijd scrollen. Hoe kan ik ervoor zorgen dat hij eindeloos door loopt.
+  
+  (Mijn vragen)
+  De eerste vraag die ik heb heeft te maken met de sectie met de logo's die eindeloos voorbij scrollen. Ik heb problemen met de scroller die zichzelf reset na een korte tijd scrollen. Hoe kan ik ervoor zorgen dat hij eindeloos door loopt.
   Ten tweede liep ik tegen een probleem aan met het wijzigen van de volgorde waarin items worden weergegeven. Het attribuut order -1 werkte niet voor mij.|vraag 1: Ik wil graag bespreken hoe je een carasoul moet maken
   
-  vraag 2: en hoe ik mijn video op groot scherm 100% kan krijgen. |vraag: -- Kan je makkelijk een gradient overlay boven een image plaatsen? |Nav laten animeren |
-  | | | | |
-  | | | | |
+  (wat wij tijdens de meeting willen bespreken)
+  vraag: en hoe ik mijn video op groot scherm 100% kan krijgen. 
+  vraag: -- Kan je makkelijk een gradient overlay boven een image plaatsen?
+
+
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+Sanne heeft veel geholpen met het herstructureren van mijn html. Ik heb geleerd dat secties een H2 element moeten hebben. Ik heb geleerd dat ik veel minder secties nodig heb en dat ik veel meer unordered lists nodig heb dan ik aanvankelijk dacht. Sanne gaf me een ruwe schets van hoe ik een carrousel moest structureren en verder wat algemene tips over hoe ik de code kon verbeteren.
+Daarnaast door mee te luisteren naar de feedback van mijn medestudenten leerde ik meer over de visueel verborgen class- en aria-labels. 
 
 </details>
 
@@ -199,8 +201,8 @@ Vraag 1: hoe en of ik ::after moet gebruiken
 Vraag 2: mijn font dikte is net een beetje anders, font weight werkt niet 
 
 Vivanne Hoogendam
-Vraag 1 : hoe voeg ik een scrollbar toe aan een horizontale carousel?
-Vraag 2 (als genoeg tijd over): hoe zorg ik voor bepaalde animatie bij meer weten section.
+Vraag 1: hoe voeg ik een scrollbar toe aan een horizontale carousel?
+Vraag 2: (als genoeg tijd over): hoe zorg ik voor bepaalde animatie bij meer weten section.
 
 Sybren Loos
 Vraag 1: Hoe laat ik met een knop specifieke dingen naar voren komen
@@ -215,10 +217,7 @@ Vraag 2: hoe zorg ik ervoor dat de em losstaat van mn span
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+Tijdens deze meeting leerde ik hoe ik een animatie die specifiek in mijn website gebruikt wordt. Namelijk het pijltje naast klikbare items. Dit maakt gebruik van het :after pseudo-element. Sanne liet zien hoe ik de animatie kon namaken en stuurde mij daarna de codepen om het te implementeren op mijn eigen website. Ook hebben we geleerd hoe je een animeerbare knop maakt (van hamburgermenu naar kruisje). Verder hebben we geleerd over hoe je de scrollbar kan stylen en enkele andere kleinere dingen besproken.
 
 </details>
 
@@ -232,19 +231,35 @@ Vraag 2: hoe zorg ik ervoor dat de em losstaat van mn span
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="indexpagina.png" width="375px" alt="indexpagina">
+  <img src="indexpaginamobile.png" width="375px" alt="indexpaginamobile">
+  <img src="eventspagina.png" width="375px" alt="eventspagina">
+  <img src="eventspaginamobile.png" width="375px" alt="eventspaginamobile">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+Dingen die goed gingen en waar ik redelijk trots op ben zijn: de responsiveness, hoewel ik een paar divs heb gebruikt om het mogelijk te maken, ben ik nog steeds erg trots dat ik het heb gekregen zoals ik het wilde.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="grid.png" width="375px" alt="grid">
+
+Het tweede waar ik trots op ben is de algehele uitstraling van de pagina. Ik vind het lijken op de officiële tonik website.
+
+Ik ben er trots op dat ik de code die ik heb geschreven volledig begrijp.
+
+Ik denk dat ik veel heb verwerkt van wat we in de werkgroepen hebben geleerd: positie absolute/relative, animatie, grids, flexbox. Ik heb ook het gevoel dat ik eindelijk css selectors beter begrijp. Hoewel ik het gevoel heb dat af en toe een class voor orde geen kwaad kan :)
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+Er zijn enkele dingen waar ik niet aan toe ben gekomen of waarvan ik niet wist hoe ik ze moest namaken. Te beginnen met het parallaxeffect op het onderste gedeelte (desktopview). Ik heb er wat mee gerommeld maar kreeg het niet werkende. Weliswaar heb ik er niet al te veel tijd aan besteed om het uit te zoeken, maar dat heeft meer te maken met het feit dat ik eerst de rest af moest maken.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="parallax.png" width="375px" alt="parallax">
+
+Ten tweede zijn de video's op mijn pagina niet te pauzeren en ook niet echt interactief. Het origineel heeft een :hover effect dat ik niet heb kunnen toevoegen. Dat geldt trouwens voor heel veel animaties in de originele pagina, er zijn veel kleine interacties/animaties waar ik niet aan toe ben gekomen.
+
+Iets wat ik wel heb geprobeerd maar echt niet werkend kreeg was de auto scroll op de carousel uit zetten. Hiervoor heb ik gezocht naar oplossing in de richting van -> 'maintain scroll position - https://stackoverflow.com/questions/9377951/how-to-remember-scroll-position-and-scroll-back' 
+of 'disable anchor link scroll - https://stackoverflow.com/questions/14185974/how-to-prevent-jump-on-an-anchor-click'
+maar ik kwam er niet uit.
+
 </details>
 
 
@@ -256,12 +271,14 @@ Vraag 2: hoe zorg ik ervoor dat de em losstaat van mn span
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
 
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg). 
-  Nb. ChatGpT en andere AI horen er ook bij.
-  Nb. Vermeld de bronnen ook in je code.
+  1. Ik heb chatGPT voornamelijk gebruikt om kleinere, onbelangrijke vragen over algemene coderegels te beantwoorden. Evenals hulp met javascript. Chatgpt schreef mijn 'updateElementClasses'-functie om klassen toe te voegen en te verwijderen als het venster een bepaalde breedte heeft.
+  Chatgpt schreef ook mijn functie 'toggleMenu'. Deze functie maakt de pagina onscrollbaar wanneer de mobiele nav menu uitgeklapt is.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  2. Docenten (Sanne/Danny/Quinten/Bahaa/Jop)
+Bahaa en Jop hebben geholpen met Github
+Quinten heeft geholpen door een 'overflow(y): hidden' toe te voegen aan een section om wat ongewenste ruimte weg te halen.
+Sanne heeft geholpen met de pijl animatie, algemene HTML structuur verbeteren en in samenwerking met Danny mijn carousel uitgelegd.
+  3. Klasgenoten (Thijs/Karlijn/Kim/Valentijn)
+Deze klasgenoten hebben door de lessen heen geholpen als iets niet werkte.
 
 </details>
