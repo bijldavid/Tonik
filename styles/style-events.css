@@ -181,11 +181,9 @@ section 8 9 10 11 & 12
 ****************/
 
 main>section:nth-of-type(2) {
-    position: relative;
     padding-top: 1.3em; 
 }
 main>section:nth-of-type(3) {
-    position: relative;
     padding: 0;
     margin: 0;
 }
